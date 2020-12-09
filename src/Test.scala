@@ -19,7 +19,7 @@ object Test extends App{
   }
 
   /*
-   * Tests the Codes
+   * Tests the Code
    */
   val arr = Array(Array(1, 2, 3),
                   Array(4, 5, 6),
