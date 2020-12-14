@@ -11,7 +11,7 @@ object HousingPricesReader extends App{
 
   //INITIATE APP
   println("Here are a list of commands: " )
-  println(readInst())
+  readInst()
   initState()
 
   //POST FUNCTIONS HERE
@@ -23,6 +23,8 @@ object HousingPricesReader extends App{
     println("What would you like to do?")
     println("  1 - Print Values    ")
 
+    //USE EXCEPTION HANDLING FOR CASES THAT ARENT ALLOWED. USE lINK BELOW FOR HELP.
+    //https://docs.scala-lang.org/overviews/scala-book/functional-error-handling.html
     val cmd = scala.io.StdIn.readLine()
     val init =  cmd match {
       case "1" => printHouses()
